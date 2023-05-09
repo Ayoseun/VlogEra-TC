@@ -33,8 +33,8 @@ import {
 
 const style = {
   wrapper: `flex-[0.7] px-8 flex flex-col`,
-  twitterIconContainer: `text-3 m-4 flex-row`,
-  tweetButton: `bg-[#328891] hover:bg-[#0E5960] flex items-center justify-center font-bold rounded-3xl h-[50px] mt-[20px] cursor-pointer`,
+  twitterIconContainer: `text-xl m-4 flex-row`,
+  tweetButton: `bg-[#20727A] hover:bg-[#1FD4CF] flex items-center justify-center font-bold rounded-3xl h-[50px] mt-[20px] cursor-pointer`,
   navContainer: `flex-1`,
   profileButton: `flex items-center mb-6 cursor-pointer hover:bg-[#333c45] rounded-[100px] p-2`,
   profileLeft: `flex item-center justify-center mr-4`,
@@ -51,7 +51,7 @@ function Sidebar(initialSelectedIcon = 'Timeline') {
   return (
     <div className={style.wrapper}>
       <div className={style.twitterIconContainer}>VLogEra-TC
-       <image src={vlog}></image> 
+      
       </div>
       <div className={style.navContainer}>
         <SideBarOption
@@ -69,9 +69,9 @@ function Sidebar(initialSelectedIcon = 'Timeline') {
           redirect={'/'}
         />
         <SideBarOption
-          Icon={selected === 'My Vlog' ? RiVidicon2Fill : BiVideoRecording}
-          text="My Vlog"
-          isActive={Boolean(selected === 'My Vlog')}
+          Icon={selected === 'MyVlog' ? RiVidicon2Fill : BiVideoRecording}
+          text="MyVlog"
+          isActive={Boolean(selected === 'MyVlog')}
           setSelected={setSelected}
           redirect={'/'}
         />
